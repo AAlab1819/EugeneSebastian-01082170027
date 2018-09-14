@@ -1,7 +1,11 @@
-<img src = "EugeneSebastian-01082170027/Image/Screen Shot 2018-09-13 at 11.09.26 PM.png" >
+[]❮img src="EugeneSebastian-01082170027/Week2/Screen Shot 2018-09-13 at 11.09.26 PM.png" ❯
 For the first question 
 [Problem ](http://codeforces.com/contest/291/problem/A) | [Solution] (https://github.com/AAlab1819/EugeneSebastian-01082170027/blob/master/Week2/SpykeTalks.java)
-I 
+I iterated the array of Spykes to check how many are identical and use a int variable called count to determine how many
+matching variables are there. Should count be greater than 1 meaning more than a pair thus the program would exit the loop
+and print out "-1". But since 0's do not affect the output in anyway so I have another variable called zeroes that 
+store the amount of zeroes that prints out 0 should it be full of 0's. 
 
+[Problem](http://codeforces.com/contest/230/problem/A) | Solution(
 
 
