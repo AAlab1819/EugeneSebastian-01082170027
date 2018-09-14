@@ -2,14 +2,14 @@
 [logo]: https://github.com/AAlab1819/EugeneSebastian-01082170027/blob/master/Week2/Screen%20Shot%202018-09-13%20at%2011.09.36%20PM.png "Logo Title Text 2"
 
 Spkye Talks
-[Problem ](http://codeforces.com/contest/291/problem/A) | [Solution] (https://github.com/AAlab1819/EugeneSebastian-01082170027/blob/master/Week2/SpykeTalks.java)
+[Problem ](http://codeforces.com/contest/291/problem/A) | [Solution] (http://codeforces.com/contest/291/submission/42817925)
 I iterated the array of Spykes to check how many are identical and use a int variable called count to determine how many
 matching variables are there. Should count be greater than 1 meaning more than a pair thus the program would exit the loop
 and print out "-1". But since 0's do not affect the output in anyway so I have another variable called zeroes that 
 store the amount of zeroes that prints out 0 should it be full of 0's. 
 
 Dragons
-[Problem](http://codeforces.com/contest/230/problem/A) | [Solution](https://github.com/AAlab1819/EugeneSebastian-01082170027/blob/master/Week2/Dragons.c)
+[Problem](http://codeforces.com/contest/230/problem/A) | [Solution](http://codeforces.com/contest/230/submission/42817986)
 
 For this problem I utilized a bubble sort where the two variables get swapped should the variable with the lower value have a larger address,
 this is done by having a integer variable called temp which stores one of the values to make the "swap" possible.
@@ -19,7 +19,8 @@ in winning the game. Notice that another variable called temp2 which is used to 
 This causes the array y[] to be sorted with respect to x[].
 
 Oath of Night Watch
-[Problem](http://codeforces.com/contest/768/problem/A) | [Solution](https://github.com/AAlab1819/EugeneSebastian-01082170027/blob/master/Week2/ONW.java)
+[Problem](http://codeforces.com/contest/768/problem/A) | [Solution](http://codeforces.com/contest/768/submission/42836808) 
+Python : http://codeforces.com/contest/768/submission/42817538
 
 For this problem although it was rather inefficent as it caused a test case error.
 In this part I will be talking about the Java program instead where I used <b>Selection Sort</b>, this is done with declaring two arrays
