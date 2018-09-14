@@ -1,0 +1,20 @@
+Fraction
+Problem http://codeforces.com/contest/854/problem/A | Solution http://codeforces.com/contest/854/submission/42783662
+
+A while loop is used that starts where variable a starts lowest value and b starts at the highest value and they both keep increasing and decreasing
+respectively until b > a is false to get the max value of a / b, should they be simplifiable however I simply add an if statement to increment 
+and decrement them by one by checking if they are divisible by 2.
+
+Tricky Alchemy
+Problem http://codeforces.com/contest/912/problem/A | Solution http://codeforces.com/contest/912/submission/42783721
+
+Using 3 for loops to check respectively how many blue, green and yellow crystals can be created through reducing the total input a and b 
+until x, y and z are satisfied that means even if a and b goes negative. If it goes negative I simply print (a+b)*-1 else I print 0.
+The program took a long time to run the third test but it does return the correct value.
+
+Diverse Team
+Problem   http://codeforces.com/contest/988/problem/A  |  Solution http://codeforces.com/contest/988/submission/42783747
+
+Using python I created three arrays a, b and c. Array a is the input while b is the duplicate which essentially deletes all the duplicates
+through a for loop. The addresses get stored into array c where it then gets sorted using the sort function built in python. Since this
+was a week 1 assignment no one stated I was not supposed to use it.
