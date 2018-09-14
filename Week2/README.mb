@@ -1,4 +1,4 @@
-[]❮img src="EugeneSebastian-01082170027/Week2/Screen Shot 2018-09-13 at 11.09.26 PM.png" ❯
+![alt text](https://github.com/AAlab1819/EugeneSebastian-01082170027/blob/master/Week2/Screen%20Shot%202018-09-13%20at%2011.09.26%20PM.png "Logo Title Text 1")
 For the first question 
 [Problem ](http://codeforces.com/contest/291/problem/A) | [Solution] (https://github.com/AAlab1819/EugeneSebastian-01082170027/blob/master/Week2/SpykeTalks.java)
 I iterated the array of Spykes to check how many are identical and use a int variable called count to determine how many
@@ -6,6 +6,8 @@ matching variables are there. Should count be greater than 1 meaning more than a
 and print out "-1". But since 0's do not affect the output in anyway so I have another variable called zeroes that 
 store the amount of zeroes that prints out 0 should it be full of 0's. 
 
-[Problem](http://codeforces.com/contest/230/problem/A) | Solution(
+[Problem](http://codeforces.com/contest/230/problem/A) | [Solution](http://codeforces.com/contest/230/my)
+
+For this problem I utilized a quick sort where 
 
 
