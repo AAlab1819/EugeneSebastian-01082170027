@@ -1,0 +1,22 @@
+http://codeforces.com/contest/469/submission/43099605
+http://codeforces.com/contest/148/submission/43098893
+http://codeforces.com/contest/492/submission/43097454
+
+For the first code problem 492: 
+
+I used brute force to sort each and every element of arr[n]. The best case scenario is if the input elements is already sorted out
+(ex. 1 2 3 4 5 compared to 2 3 5 1 2). Average case would still be rather rigorous due to the nature of the approach since
+it compares each and every element with the current element and continues. 
+
+For the second problem 148:
+
+The best case scenario is if all the inputs are zero. Average case scenario, the program will still take
+quite a time brute forcing it's way through especially since some inputs may be the same it does not differentiate
+between inputs.
+
+For the third problem 469:
+
+The best case scenario is if the level that is unable to be finished is at level 1 hence the program will 
+terminate with "Oh my keyboard" the fastest way possible. Average case scenario the program is going to take longest
+if the output is "I become the guy" and would be quite fast with "Oh my keyboard" if the unfinished level is
+not in the last level. 
