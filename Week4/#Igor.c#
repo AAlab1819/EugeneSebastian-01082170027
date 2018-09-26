@@ -1,0 +1,98 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+	int n, m, k;
+	int c = 0;
+	int pic = 0;
+	int rep = 0;
+	int x = 1;
+	int y = 0;
+	int duplicatecount; // counts to make sure no duplicate steps
+	scanf("%d",&n); //y
+	scanf("%d",&m); //x
+	scanf("%d",&k);
+	int duplicate[n * m];
+	for ( int i = 0 ; i < n * m ; i ++ )
+		duplicate[i] = -1;
+	int up,down,left,right;
+	char arr[m][n]; //dimension
+	int lo[k*2]; //starting location
+	for ( int j = 0 ; j < n ; j++ ) {
+		for ( int i = 0 ; i<= m ; i++ ) {
+			scanf("%c",&arr[i][j]);
+		}
+	}
+	for ( int j = 0 ; j < n ; j++ ) {
+		for ( int i = 0 ; i <= m ; i++ ) {
+			printf("%c",arr[i][j]);
+		}
+	}
+	for ( int i = 0 ; i < k * 2 ; i++ ) {
+			scanf("%d",&lo[i]);
+		} 
+	for ( int i = 0 ; i < k * 2  ; i++ ) {
+			printf("\n%d ",lo[i]);
+		}
+	printf("%c",arr[1][2]);//x then y
+	printf("%c",arr[2][1]);
+	printf("%c",arr[3][1]);
+	printf("%c",arr[4][1]);
+	printf("%c",arr[5][1]);
+	for ( int i = 0 ; i < 4 ; i+=2 ) {
+		if (arr[lo[i+1]][lo[i]-2] == '*'){
+			pic++;
+			top = 0;
+		} if (arr[lo[i+1]][lo[i]] == '*'){
+			pic++;
+			bot = 0;
+		} if (arr[lo[i+1]-1][lo[i]-1] == '*'){
+			pic++;
+			left = 0;
+		}	if (arr[lo[i+1]+1][lo[i]-1] == '*'){
+			pic++;
+			right = 0;
+		}
+		for ( int z = 0 ; duplicate[z]!= -1 ; z+=2){
+			for ( int j = 0 ; j < k * 2 ; j+=2 ) {
+				if ( lo[j] == duplicate[z] && lo[j + 1] == duplicate[z+1] ) {
+					i += 2;
+				}
+			}
+		}
+		if (arr[lo[i+1]][lo[i]-2] == '.'){		
+			lo[i] = lo[i] - 1;
+			duplicate[x]=lo[i+1];
+			duplicate[y]=lo[i];
+			i -= 2;
+			x+=2;
+			y+=2;
+			top = 1;
+		}else if (arr[lo[i+1]][lo[i]] == '.' ){
+			lo[i] = lo[i] + 1;
+			duplicate[x]=lo[i+1];
+			duplicate[y]=lo[i];
+			i -= 2;
+			x += 2;
+			//printf("bot");
+		}else if (arr[lo[i+1]-1][lo[i]-1] == '.'){
+			lo[i + 1] = lo[i + 1] - 1;
+			duplicate[x]=lo[i+1];
+			duplicate[y]=lo[i];
+			i -= 2;
+			x += 2;
+			y += 2;
+			//printf("left");
+		}else if (arr[lo[i+1]+1][lo[i]-1] == '.'){
+			lo[i + 1] = lo[i + 1] + 1;
+			duplicate[x]=lo[i+1];
+			duplicate[y]=lo[i];
+			i -= 2;
+			x += 2;
+			y += 2;
+			//printf("ad");
+		}
+	}
+	
+	printf("%d",pic);
+	//easiest way is to read the --- scan left up right bot 
+}
