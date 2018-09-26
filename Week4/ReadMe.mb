@@ -1,0 +1,17 @@
+For the first problem 
+This function uses a recursive function that uses dx and dy array to go left right up and down
+and iterates recursively per every input entered
+to check whether there are any '*' around the empty spot
+It also used a lot of global variables for this function.
+The !p[x][y] in the main function as well as the if (p[nx][ny]) is to determine whether or not the spot has been occupied to
+prevent double counting the area.
+Else is used to move positions if there is a '.'
+
+http://codeforces.com/contest/598/submission/35600156
+http://codeforces.com/contest/598/problem/D
+
+For the second problem I simply printed out the answer since it is a sequence formula. Although the sixth test case
+was deemed wrong by CodeForces, I tried it in my own laptop and it worked.
+
+http://codeforces.com/contest/268/submission/43431023
+http://codeforces.com/contest/268/problem/B
