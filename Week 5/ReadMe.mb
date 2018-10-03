@@ -4,3 +4,36 @@ Problem:
 http://codeforces.com/contest/4/problem/C
 Solution:
 http://codeforces.com/contest/4/submission/43710161
+For this problem I employed the use of a dictionary. The dictionary y is used to record the input
+strings and allows the program to easily add a digit in front of the string, which is the value which
+you refer to. Best case scenario is if there is only one input, and on average case scenarios there will 
+at least be several repeating strings.
+
+115A
+
+Problem:
+http://codeforces.com/contest/115/problem/A
+Solution:
+http://codeforces.com/contest/115/submission/25441710
+For this problem the user used a dictionary a. The person then iterated over the number of
+inputs where the person then added each value to a separate key. The person then multiplied
+a list b by [1]*n which fills the whole list by n amounts of 1's. The person then used a nested loop 
+inorder to find the number of possible groups through calculating the number of unique numbers that are not -1 
+with the list b. Best case scenario is if there is only one input -1 and on average the program
+would take a shorter time if there are less unique digits.
+
+
+913B
+
+Problem:
+http://codeforces.com/problemset/problem/913/B
+Solution:
+http://codeforces.com/contest/913/submission/34066592
+For this problem the user used three iterators. The first iterator stores the input into a array.
+Not that the user starts i at 2 which is the starting digit of the inputs since we know the first input
+is always 1 by default. The values are stored in array fa[1010], and son[1010] acts as the "counter".
+The program iterates again to increment array p[1010] should son[1010] be empty. 
+The last iterator checks whether son[n] and p[n] are less than 3 which would print No or Yes if 
+the guard statement was never True. P[n] is utilized to calculate the number of children there are in the root.
+Best case scenario is if the input is 2 as the program will always return No. On average the program 
+would be somewhat slow due to utilizing three arrays of substancial size. 
