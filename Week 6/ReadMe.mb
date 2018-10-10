@@ -1,0 +1,29 @@
+The first question 
+https://www.hackerearth.com/practice/data-structures/trees/heapspriority-queues/practice-problems/algorithm/roy-and-trending-topics-1/
+
+Is solved using 2 double arrays and various nested loops. 1st nested loop was for adding
+the input. Arr[N][7] stored all the inputs with N being the respective ID's. 
+Then the 2nd nested loop was used to count the new score by having a multiple per each condition and 
+having variable score count the score. 
+Next was a for loop that was used to calculate the difference between the old and new scores.
+Then the final nested loop was used to sort between the change[][] array since
+it only had 3 values per ID instead of Arr[][]. The final loop was to print the output
+with change[i][2] being the new score and change[i][0] being the respective ID's.
+
+
+The second question
+https://www.hackerrank.com/challenges/ctci-find-the-running-median/problem
+
+Is solved using a 1d array and a 2d array, where arr[N] was used to hold 
+all the input values while adder[N][N] was used to hold 
+the values of the input in series (kind of like a stair case). 
+To add the values in series I had an int c which was continually incremented.
+
+The nested loop with 3 or loops was used to sort the numbers inside adder[N][N].
+The reason c and i starts at 1 in this nested loop was because the first
+input was already sorted since it only had one variable. 
+I then used a for loop to print the output which used a condition if c + 1 was odd or even
+which if c + 1 was odd I simply added it to become c + 2 since for instance if
+c + 1 was 3 I added 1 and it becomes 4 and hence if I divide it by 2 I get 2 and
+I only need the sorted value in address 2. Whereas if it was even I added
+the two middle values.
