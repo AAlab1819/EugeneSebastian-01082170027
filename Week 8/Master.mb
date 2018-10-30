@@ -1,0 +1,8 @@
+http://codeforces.com/contest/433/submission/45030606
+For the second question the program uses the array a[33] to store the inputs but at the same time
+discards the unimportant inputs ex. if it's far too overpriced compared to it's other counterparts
+by liter comparison. Essentially the array stores the cheapest price for a particular litter.
+Next the function iterates where it starts from the largest litter based cost since it occupies the most space.
+Where it uses variable l to store the amount of liters remaining to be bought and continually reduces it till
+it reaches 0. The variable cur displays the current price.
+http://codeforces.com/contest/913/submission/34605979
