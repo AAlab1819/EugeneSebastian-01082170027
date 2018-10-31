@@ -4,8 +4,9 @@ the sum will be taken from an unordered list of stones which in this case was ar
 Secondly it needs to have a list sorted ascendingly which in this case was k[100005].
 Using the array we subtact the cummulative sum of the right with the left boundary a[r]-a[l-1] / k[r]-k[l-1].
 a[r] / k[r] contains sums of the right boundary while a[l-1] / k[l-1] "cuts" to create the left boundary and hence the range.
+
 Question : http://codeforces.com/contest/433/problem/B
-Ans: http://codeforces.com/contest/433/submission/45030606
+Answer : http://codeforces.com/contest/433/submission/45030606
 
 
 For the second question the program uses the array a[33] to store the inputs but at the same time
@@ -14,4 +15,6 @@ by liter comparison. Essentially the array stores the cheapest price for a parti
 Next the function iterates where it starts from the largest litter based cost since it occupies the most space.
 Where it uses variable l to store the amount of liters remaining to be bought and continually reduces it till
 it reaches 0. The variable cur displays the current price.
-http://codeforces.com/contest/913/submission/34605979
+
+Question : http://codeforces.com/contest/913/submission/34605979
+Answer : http://codeforces.com/contest/913/problem/C
