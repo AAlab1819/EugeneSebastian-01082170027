@@ -1,21 +1,11 @@
-The objective of problem 433B Kuriyama Mirai's Stone is to find the sum of 
-the numbers written on her stones, given one of the 2 possible scenarios and the boundary(境界) 
-from which the sum is taken. In the first scenario, the sum will be taken from the 
-unordered list of stone. In the second scenario, the sum will be taken from the 
-list sorted in an ascending order.
-The solution to this problem can be found by making a cummulative list for both scenarios. 
-Then using the list we can find the sum within the boundary by subtracting cummulative 
-sum at the right boundary by the cummulative sum before the left boundary(Sum[r]-Sum[l-1]). 
-This is because Sum[l-1] contains the sum before(beyond) the boundary exclusively, while 
-Sum[r] contains both the sum before the boundary and within the boundary. Subtracting Sum[r] by 
-Sum[l-1] eliminates the like term which is the sum before the boundary and therefore 
-resulting in only sum within the boundary.
+
 For the first question the program must satisfy two conditions. When the type is 1, the 
 the sum will be taken from an unordered list of stones which in this case was array a[100005].
 Secondly it needs to have a list sorted ascendingly which in this case was k[100005].
 Using the array we subtact the cummulative sum of the right with the left boundary a[r]-a[l-1] / k[r]-k[l-1].
 a[r] / k[r] contains sums of the right boundary while a[l-1] / k[l-1] "cuts" to create the left boundary and hence the range.
-http://codeforces.com/contest/433/submission/45030606
+Question : http://codeforces.com/contest/433/problem/B
+Ans: http://codeforces.com/contest/433/submission/45030606
 
 
 For the second question the program uses the array a[33] to store the inputs but at the same time
