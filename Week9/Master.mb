@@ -1,1 +1,5 @@
-test
+For the first problem the program is split to two functions, the main function
+which holds all the inputs where the task is then carried out
+in the Sack() function. 
+The Sack() function uses a K[][] array that calculates and stores the
+total value for the output. 
