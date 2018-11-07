@@ -4,3 +4,5 @@ in the Sack() function.
 The Sack() function uses a K[][] array that calculates and stores the
 total value for the output. The program finds how to maximize the value per weight of a person which is then
 summed and returned. 
+
+The complexity is O(n^2)
