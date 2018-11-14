@@ -4,8 +4,10 @@ http://codeforces.com/contest/601/problem/A
 Using Breadth First Search to find the shortest path we find
 the path from 1 to N. Best case scenario is when we get to find
 a direct railway from 1 to N.
-O(nlogn)
+
+Worst Case: O(n^2)
+
 http://codeforces.com/contest/20/submission/43821899
 http://codeforces.com/contest/20/problem/C
 
-O(n^2)
+Worst Case: O(nlogn)
