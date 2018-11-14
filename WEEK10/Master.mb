@@ -10,4 +10,7 @@ Worst Case: O(n^2)
 http://codeforces.com/contest/20/submission/43821899
 http://codeforces.com/contest/20/problem/C
 
+Utilizing a tuple to store the cost, destination and source, while the path is stored using an array that stores
+the previous path before the index. Keeping track of the source we reverese iterate to find the path.
+
 Worst Case: O(nlogn)
